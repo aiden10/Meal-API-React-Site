@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { SearchBar } from "./components/searchBar";
+import { RandomButton } from "./components/RandomButton";
+import { SearchResults } from "./components/SearchResults";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mealAPI">
+      <span id="header">
+        <h1>Search for a meal or ingredient</h1>
+      </span>
+
+      <RandomButton/>
+
+      <div className="search-bar-container">
+        <SearchBar/>
+      </div>
+      <div className="results-container">    
+        <SearchResults/>
+      </div>
     </div>
   );
 }
