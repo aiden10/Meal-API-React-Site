@@ -1,22 +1,25 @@
 import React from "react";
 
 export const SearchResults = ({ mealNames, cuisines, imageURLS }) => {
-    if (!mealNames) {
-        return ;
-    }
-    
-    return ( 
-        <div> 
-            {mealNames.map((mealName, index) => (
-                <div key={index}> 
-                    <h2>{mealName}</h2>
-                    <h3>Cuisine: {cuisines[index]}</h3>
-                    <img src={imageURLS[index]} alt={mealName} width='400' height='400'/>
-                </div>
-            ))}
-        </div>
+  let results = null;
+  
+  if (mealNames) {
+    results = (
+      <div>
+        {mealNames.map((mealName, index) => (
+          <div key={index}>
+            <h2>{mealName}</h2>
+            <h3>Cuisine: {cuisines[index]}</h3>
+            <img src={imageURLS[index]} alt={mealName} width="400" height="400" />
+          </div>
+        ))}
+      </div>
     );
+  }
+
+  return results;
 };
+
 /*
 <div> 
     {mealNames.map((mealName, index) => ( doing something to each individual mealName, index for accessing the info of each meal
