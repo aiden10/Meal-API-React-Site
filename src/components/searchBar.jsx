@@ -33,9 +33,6 @@ export const SearchBar = () => {
             setCuisine(cuisines);
             setImageURLS(urls);
 
-            console.log(mealNames);
-            console.log(cuisine);
-            console.log(imageURLS);
         })
         .catch((error) => {
             console.error('Error fetching data:', error);

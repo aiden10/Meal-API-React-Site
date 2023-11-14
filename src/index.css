@@ -1,5 +1,4 @@
-* {
-  box-sizing: border-box;
+html {
   background-color: rgb(255, 255, 255);
 }
 
@@ -18,13 +17,6 @@ body {
   min-width: 200px;
 }
 
-.results-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15px;
-}
-
 #header {
   text-shadow: 2px 2px 10px bisque;
   margin-top: 5%;
@@ -33,5 +25,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#results-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  left: 0px;
+  margin-top: 30%;
+  margin-left: 50vh;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  overflow-x: auto;
+  color: rgba(85, 65, 66);
+  background-color: transparent;
+}
+
+.cell {
+  background-color: transparent;
+  border: none;
+  margin: 10px; 
+  width: 100%;
 }
 

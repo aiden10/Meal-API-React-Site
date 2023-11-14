@@ -11,9 +11,7 @@ function App() {
       <div className="search-bar-container">
         <SearchBar/>
       </div>
-      <div className="results-container">    
-        <SearchResults/>
-      </div>
+      <SearchResults/>
     </div>
   );
 }

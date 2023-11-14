@@ -5,9 +5,9 @@ export const SearchResults = ({ mealNames, cuisines, imageURLS }) => {
   
   if (mealNames) {
     results = (
-      <div>
+      <div id="results-container">
         {mealNames.map((mealName, index) => (
-          <div key={index}>
+          <div key={index} className="cell">
             <h2>{mealName}</h2>
             <h3>Cuisine: {cuisines[index]}</h3>
             <img src={imageURLS[index]} alt={mealName} width="400" height="400" />
