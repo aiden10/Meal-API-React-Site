@@ -15,7 +15,7 @@ border: none;
 margin: 30px;
 height: 100%;
 width: 100%;
-
+background-color: transparent;
 }
 input:focus {
     outline: none;
