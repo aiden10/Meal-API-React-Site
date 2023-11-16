@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./SearchResults.css"
 export const SearchResults = ({ mealNames, cuisines, imageURLS }) => {
   let results = null;
   

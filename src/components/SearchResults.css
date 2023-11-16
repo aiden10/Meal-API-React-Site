@@ -1,0 +1,20 @@
+#results-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    left: 0px;
+    margin-top: 50%;
+    margin-left: 9%;
+    max-height: calc(100vh - 80px);
+    color: rgba(85, 65, 66);
+    background-color: transparent;
+  }
+  
+  .cell {
+    background-color: transparent;
+    border: none;
+    margin: 10px; 
+    width: 100%;
+  }
+  
+  
