@@ -4,6 +4,8 @@ import { SearchResults } from "./components/SearchResults";
 function App() {
   return (
     <div className="mealAPI">
+      <title>Meal DB</title>
+
       <span id="header">
         <h1>Search for a meal or ingredient</h1>
       </span>
